@@ -7,8 +7,11 @@ public class FPCController : MonoBehaviour
     // Start is called before the first frame update
     public CharacterController characterController;
     public GameObject _camera;
+    [Range(0, 360)] public float _zAngleRestriction;
+    [Range(-100, 100)] public float _clampedZAngle = 0;
     void Start()
     {
+        _zAngleRestriction = 45;
         characterController = GetComponent<CharacterController>();
     }
 
@@ -21,8 +24,11 @@ public class FPCController : MonoBehaviour
         characterController.SimpleMove(totalValue);
         float turnSpeed = 5.0f;
         float rotateValue = Input.GetAxis("Mouse X") * turnSpeed;
-        float rotatezValue = Input.GetAxis("Mouse Y");
+        float rotateZValue = Input.GetAxis("Mouse Y");
         transform.Rotate(0, rotateValue, 0);
-        _camera.transform.Rotate(rotatezValue, 0, 0);
+
+        _clampedZAngle += rotateZValue;
+        _clampedZAngle = Mathf.Clamp(_clampedZAngle, -_zAngleRestriction, _zAngleRestriction);
+        _camera.transform.eulerAngles = new Vector3 (_clampedZAngle, transform.localEulerAngles.y, 0);
     }
 }
