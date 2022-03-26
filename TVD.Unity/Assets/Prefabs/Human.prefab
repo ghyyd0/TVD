@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5426141322723139514}
   - component: {fileID: 5426141322723139515}
+  - component: {fileID: 1434602489}
   m_Layer: 0
   m_Name: Human
   m_TagString: Untagged
@@ -44,10 +45,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bbea4f52670684dae69166b0754e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _chracter: {fileID: 0}
   type: 0
   hp: 0
   speed: 0
-  keysType: 
+  enemies: 
+  isPlayer: 0
+--- !u!135 &1434602489
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426141322723139517}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5426141323162276345
 GameObject:
   m_ObjectHideFlags: 0
