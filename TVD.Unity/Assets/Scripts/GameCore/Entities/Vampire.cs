@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vampire : MonoBehaviour
+public class Vampire : Character
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        type = CharacterType.vampire;
+        speed = 5;
+        keysType.Add(CharacterType.human);
         
     }
 }

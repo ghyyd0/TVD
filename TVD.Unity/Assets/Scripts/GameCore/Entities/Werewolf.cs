@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Werewolf : MonoBehaviour
+public class Werewolf : Character
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        type = CharacterType.werewolf;
+        speed = 5;
+        keysType.Add(CharacterType.human);
     }
 }
