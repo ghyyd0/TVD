@@ -11,6 +11,7 @@ public class FPCController : MonoBehaviour
     [Range(-100, 100)] public float _clampedZAngle = 0;
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         _zAngleRestriction = 45;
         characterController = GetComponent<CharacterController>();
     }
