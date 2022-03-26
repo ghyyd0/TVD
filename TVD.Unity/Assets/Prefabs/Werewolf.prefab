@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7457507247220234264}
   - component: {fileID: 4969338071439954973}
+  - component: {fileID: 977073724}
   m_Layer: 0
   m_Name: Werewolf
   m_TagString: Untagged
@@ -44,6 +45,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d05d8528afea08041840f9aa5d3b1d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _chracter: {fileID: 0}
+  type: 0
+  hp: 100
+  speed: 0
+  enemies: 
+  isPlayer: 0
+--- !u!135 &977073724
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4537622049476407738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8896634996670549627
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,7 +28,7 @@ public class Character : MonoBehaviour
         if (isPlayer)
             return;
 
-        Vector3 randomPosition = new Vector3(Random.Range(0, 100), 0, Random.Range(0, 100));
-        _chracter.SetDestination(randomPosition);
+        //Vector3 randomPosition = new Vector3(Random.Range(0, 100), 0, Random.Range(0, 100));
+        //_chracter.SetDestination(randomPosition);
     }
 }
