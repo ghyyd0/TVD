@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7517769983282313785}
   - component: {fileID: 7517769983282313784}
   - component: {fileID: 7517769983282313790}
+  - component: {fileID: 996652018}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -68,6 +69,22 @@ MonoBehaviour:
   _camera: {fileID: 7517769984270793746}
   _zAngleRestriction: 0
   _clampedZAngle: 0
+--- !u!114 &996652018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517769983282313787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bbea4f52670684dae69166b0754e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  hp: 0
+  speed: 0
+  enemies: 
 --- !u!1 &7517769984270793746
 GameObject:
   m_ObjectHideFlags: 0

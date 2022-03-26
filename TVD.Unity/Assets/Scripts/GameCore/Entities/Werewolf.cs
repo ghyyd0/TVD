@@ -7,7 +7,8 @@ public class Werewolf : Character
     private void Awake()
     {
         type = CharacterType.werewolf;
+        hp = 100;
         speed = 5;
-        keysType.Add(CharacterType.human);
+        enemies.Add(CharacterType.human);
     }
 }

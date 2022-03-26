@@ -7,8 +7,9 @@ public class Vampire : Character
     private void Awake()
     {
         type = CharacterType.vampire;
+        hp = 100;
         speed = 5;
-        keysType.Add(CharacterType.human);
+        enemies.Add(CharacterType.human);
         
     }
 }
