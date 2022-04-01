@@ -5,6 +5,7 @@ using UnityEngine;
 public class InteractionManager : MonoBehaviour
 {
     [SerializeField] GameObject redPanel;
+    [SerializeField] GameObject greenPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +17,12 @@ public class InteractionManager : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, transform.forward, out objectOnHitLine))
         {
-            Debug.DrawLine(transform.position, objectOnHitLine.point, Color.red); 
-             
-            if(objectOnHitLine.distance < 2)
-            {  
-                GameObject enemy = objectOnHitLine.transform.gameObject; 
-                if(enemy.tag =="Vampire")
+            Debug.DrawLine(transform.position, objectOnHitLine.point, Color.red);
+
+            if (objectOnHitLine.distance < 2)
+            {
+                GameObject enemy = objectOnHitLine.transform.gameObject;
+                if (enemy.tag == "Vampire")
                 {
                     redPanel.SetActive(true);
                 }
@@ -30,7 +31,24 @@ public class InteractionManager : MonoBehaviour
                     redPanel.SetActive(false);
                 }
 
-            } 
+                if (enemy.tag == "Werewolf")
+                {
+                    redPanel.SetActive(true);
+                }
+                else
+                {
+                    redPanel.SetActive(false);
+                }
+                if (enemy.tag == "Human")
+                {
+                    greenPanel.SetActive(true);
+                }
+                else
+                {
+                    greenPanel.SetActive(false);
+                }
+            }
+             
         }
     }
 }

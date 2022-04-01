@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -432,6 +432,11 @@ PrefabInstance:
     - target: {fileID: 4537622049476407738, guid: e54a99634f1e53a43a195451d373d8f1,
         type: 3}
       propertyPath: m_Name
+      value: Werewolf
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537622049476407738, guid: e54a99634f1e53a43a195451d373d8f1,
+        type: 3}
+      propertyPath: m_TagString
       value: Werewolf
       objectReference: {fileID: 0}
     - target: {fileID: 7457507247220234264, guid: e54a99634f1e53a43a195451d373d8f1,
@@ -1071,6 +1076,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Human
       objectReference: {fileID: 0}
+    - target: {fileID: 5426141322723139517, guid: 4f8565f6f99e6f64c9628d86add81420,
+        type: 3}
+      propertyPath: m_TagString
+      value: Human
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f8565f6f99e6f64c9628d86add81420, type: 3}
 --- !u!1 &1883813336 stripped
@@ -1092,6 +1102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redPanel: {fileID: 518897338}
+  greenPanel: {fileID: 407971199}
 --- !u!4 &543450653478754556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3055084358610450703, guid: a66a9d60c35f6f14b931aad7f96a069c,
