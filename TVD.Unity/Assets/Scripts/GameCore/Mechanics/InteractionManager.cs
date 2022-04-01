@@ -18,16 +18,13 @@ public class InteractionManager : MonoBehaviour
         {
             Debug.DrawLine(transform.position, objectOnHitLine.point, Color.red); 
              
-            if(objectOnHitLine.distance < 10)
-            { 
-                GameObject enemy = objectOnHitLine.transform.gameObject;
-                if(enemy.GetComponent<Werewolf>())
+            if(objectOnHitLine.distance < 2)
+            {  
+                GameObject enemy = objectOnHitLine.transform.gameObject; 
+                if(enemy.tag =="Vampire")
                 {
-                    if (enemy.GetComponent<Werewolf>().enemies.Contains(CharacterType.human))
-                    {
-                        redPanel.SetActive(true);
-                    }
-                } 
+                    redPanel.SetActive(true);
+                }
                 else
                 {
                     redPanel.SetActive(false);
