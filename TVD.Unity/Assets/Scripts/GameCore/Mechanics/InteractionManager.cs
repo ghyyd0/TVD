@@ -22,14 +22,18 @@ public class InteractionManager : MonoBehaviour
 
             if (objectOnHitLine.distance < 2)
             {
+                
                 GameObject enemy = objectOnHitLine.transform.gameObject;
+                 
+
                 if (enemy.tag == "Vampire")
                 {
                     vampirePanel.SetActive(true);
+                    enemy.GetComponent<Vampire>().isPlayerLook = true;
                 }
                 else
                 { 
-                    vampirePanel.SetActive(false);
+                    vampirePanel.SetActive(false);  
                 }
 
                 if (enemy.tag == "Werewolf")
