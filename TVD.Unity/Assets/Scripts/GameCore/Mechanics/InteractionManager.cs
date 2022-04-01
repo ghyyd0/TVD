@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class InteractionManager : MonoBehaviour
 {
-    [SerializeField] GameObject redPanel;
-    [SerializeField] GameObject greenPanel;
+    [SerializeField] GameObject humanPanel;
+    [SerializeField] GameObject vampirePanel;
+    [SerializeField] GameObject werewolfPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,28 +25,28 @@ public class InteractionManager : MonoBehaviour
                 GameObject enemy = objectOnHitLine.transform.gameObject;
                 if (enemy.tag == "Vampire")
                 {
-                    redPanel.SetActive(true);
+                    vampirePanel.SetActive(true);
                 }
                 else
-                {
-                    redPanel.SetActive(false);
+                { 
+                    vampirePanel.SetActive(false);
                 }
 
                 if (enemy.tag == "Werewolf")
                 {
-                    redPanel.SetActive(true);
+                    werewolfPanel.SetActive(true);
                 }
                 else
                 {
-                    redPanel.SetActive(false);
+                    werewolfPanel.SetActive(false);
                 }
                 if (enemy.tag == "Human")
                 {
-                    greenPanel.SetActive(true);
+                    humanPanel.SetActive(true);
                 }
                 else
                 {
-                    greenPanel.SetActive(false);
+                    humanPanel.SetActive(false);
                 }
             }
              
