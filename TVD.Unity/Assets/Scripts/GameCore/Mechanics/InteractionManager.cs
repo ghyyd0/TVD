@@ -22,7 +22,7 @@ public class InteractionManager : MonoBehaviour
 
             if (objectOnHitLine.distance < 2)
             {
-                
+                Cursor.lockState = CursorLockMode.None;
                 GameObject enemy = objectOnHitLine.transform.gameObject;
                  
 
@@ -60,6 +60,7 @@ public class InteractionManager : MonoBehaviour
             }
              else
             {
+                Cursor.lockState = CursorLockMode.Locked;
                 humanPanel.SetActive(false);
                 werewolfPanel.SetActive(false);
                 vampirePanel.SetActive(false);
