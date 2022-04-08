@@ -15,17 +15,25 @@ public class InteractionManager : MonoBehaviour
     RaycastHit objectOnHitLine;
     private GameObject enemy;
 
-
+    public void Lose()
+    {
+        GameObject.FindObjectOfType<SceneController>().LoadScene("Lose");
+    }
+     
     public void AkonitAplly()
     {
         if (enemy.GetComponent<Werewolf>())
             Destroy(enemy);
+        else
+            Lose();
     }
      
     public void WoodenStakeAplly()
     {
         if (enemy.GetComponent<Vampire>())
             Destroy(enemy);
+        else
+            Lose();
     }
 
     // Update is called once per frame
