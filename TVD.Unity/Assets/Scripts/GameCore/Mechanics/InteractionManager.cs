@@ -21,6 +21,12 @@ public class InteractionManager : MonoBehaviour
         if (enemy.GetComponent<Werewolf>())
             Destroy(enemy);
     }
+     
+    public void WoodenStakeAplly()
+    {
+        if (enemy.GetComponent<Vampire>())
+            Destroy(enemy);
+    }
 
     // Update is called once per frame
     void Update()
