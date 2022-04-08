@@ -13,6 +13,15 @@ public class InteractionManager : MonoBehaviour
         
     }
     RaycastHit objectOnHitLine;
+    private GameObject enemy;
+
+
+    public void AkonitAplly()
+    {
+        if (enemy.GetComponent<Werewolf>())
+            Destroy(enemy);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -22,8 +31,9 @@ public class InteractionManager : MonoBehaviour
 
             if (objectOnHitLine.distance < 2)
             {
+                Cursor.lockState = CursorLockMode.None;
                 
-                GameObject enemy = objectOnHitLine.transform.gameObject;
+                enemy = objectOnHitLine.transform.gameObject;
                  
 
                 if (enemy.tag == "Vampire")
@@ -55,6 +65,8 @@ public class InteractionManager : MonoBehaviour
             }
              else
             {
+
+                Cursor.lockState = CursorLockMode.Locked;
                 humanPanel.SetActive(false);
                 werewolfPanel.SetActive(false);
                 vampirePanel.SetActive(false);
