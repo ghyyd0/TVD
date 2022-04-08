@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -239,6 +239,11 @@ PrefabInstance:
     - target: {fileID: 977073724, guid: e54a99634f1e53a43a195451d373d8f1, type: 3}
       propertyPath: m_Center.y
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635536815759988510, guid: e54a99634f1e53a43a195451d373d8f1,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4537622049476407738, guid: e54a99634f1e53a43a195451d373d8f1,
         type: 3}
@@ -471,6 +476,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vampire
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042260175149504990, guid: 726724318e3b01749b3c51f2b79d7f16,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
         type: 3}
@@ -1145,7 +1155,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1487,6 +1497,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5426141323162276228, guid: 4f8565f6f99e6f64c9628d86add81420,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f8565f6f99e6f64c9628d86add81420, type: 3}
 --- !u!1 &1883813336 stripped
@@ -1523,10 +1538,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1083155367}
     m_Modifications:
+    - target: {fileID: 540781598592579849, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1508457835183976862, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2390338128551569028, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2390856858427696053, guid: a66a9d60c35f6f14b931aad7f96a069c,
         type: 3}
       propertyPath: m_Name
       value: room
+      objectReference: {fileID: 0}
+    - target: {fileID: 2445944902518810030, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2783584103869858125, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3055084358610450703, guid: a66a9d60c35f6f14b931aad7f96a069c,
         type: 3}
@@ -1581,6 +1621,106 @@ PrefabInstance:
     - target: {fileID: 3055084358610450703, guid: a66a9d60c35f6f14b931aad7f96a069c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044422365805319477, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592108950546334409, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266823608246065411, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5439248497600170479, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690856297742948280, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913827407144178117, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5920320340814052463, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6140579337542114111, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6295818945070723074, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501381614558536040, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876144317254182332, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186344827448058380, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241933324773405811, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561943584925838692, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7789760000586769075, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004993363619628326, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076004970331922302, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175292192611140006, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670286879463439255, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116951842542768936, guid: a66a9d60c35f6f14b931aad7f96a069c,
+        type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1655,6 +1795,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517769984762591620, guid: 9a7298a55701d924c97838e2d6062207,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a7298a55701d924c97838e2d6062207, type: 3}
