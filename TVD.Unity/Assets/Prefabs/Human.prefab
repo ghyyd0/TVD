@@ -48,10 +48,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _chracter: {fileID: 0}
   type: 0
-  hp: 0
+  hp: 100
   speed: 0
   enemies: 
   isPlayer: 0
+  spawnPoints: []
+  destinationPoint: {x: 0, y: 0, z: 0}
+  isPlayerLook: 0
 --- !u!135 &1434602489
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -63,8 +66,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.8
+  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!195 &1280170758
 NavMeshAgent:
   m_ObjectHideFlags: 0

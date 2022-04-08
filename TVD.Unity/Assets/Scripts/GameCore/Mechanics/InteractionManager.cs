@@ -53,7 +53,12 @@ public class InteractionManager : MonoBehaviour
                     humanPanel.SetActive(false);
                 }
             }
-             
+             else
+            {
+                humanPanel.SetActive(false);
+                werewolfPanel.SetActive(false);
+                vampirePanel.SetActive(false);
+            }
         }
     }
 }
