@@ -1180,7 +1180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1182162871
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1570,75 +1570,6 @@ MonoBehaviour:
   humanPanel: {fileID: 407971199}
   vampirePanel: {fileID: 518897338}
   werewolfPanel: {fileID: 1182162870}
---- !u!1001 &2125716666
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1410430511397734626, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_Name
-      value: Vampire (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 65.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 68.329
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971642491834017437, guid: 726724318e3b01749b3c51f2b79d7f16,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 726724318e3b01749b3c51f2b79d7f16, type: 3}
 --- !u!4 &543450653478754556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3055084358610450703, guid: a66a9d60c35f6f14b931aad7f96a069c,
