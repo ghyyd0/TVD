@@ -6,12 +6,7 @@ public class InteractionManager : MonoBehaviour
 {
     [SerializeField] GameObject humanPanel;
     [SerializeField] GameObject vampirePanel;
-    [SerializeField] GameObject werewolfPanel;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject werewolfPanel; 
     RaycastHit objectOnHitLine;
     private GameObject enemy;
 
