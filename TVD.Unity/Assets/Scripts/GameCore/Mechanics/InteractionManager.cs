@@ -58,6 +58,7 @@ public class InteractionManager : MonoBehaviour
                 if (enemy.tag == "Werewolf")
                 {
                     werewolfPanel.SetActive(true);
+                    enemy.GetComponent<Werewolf>().isPlayerLook = true;
                 }
                 else
                 {
@@ -66,6 +67,7 @@ public class InteractionManager : MonoBehaviour
                 if (enemy.tag == "Human")
                 {
                     humanPanel.SetActive(true);
+                    enemy.GetComponent<Human>().isPlayerLook = true;
                 }
                 else
                 {
